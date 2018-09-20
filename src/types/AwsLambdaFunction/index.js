@@ -173,3 +173,10 @@ export const deploy = async (instance, context) => {
 }
 
 export const remove = async (instance, context) => {}
+
+export const getSinkConfig = () => {
+  return {
+    uri: this.arn,
+    protocol: 'AwsLambdaFunction'
+  }
+}
